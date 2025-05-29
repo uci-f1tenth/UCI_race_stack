@@ -58,8 +58,7 @@ The codebase is organized to clearly separate the Gym environment integration fr
 \begin{itemize}
     \item \texttt{dreamer\_node/agents/dreamer\_agent.py}: This is the primary file responsible for interfacing with the ROS2 environment.  It handles the subscription to the scan topic for laser scan data and the publishing of control commands (steering and speed) to the drive topic.  This file contains the logic for receiving sensor data, preprocessing it as needed, feeding it to the DreamerV3 agent, and translating the agent's actions into ROS2 messages for the F1Tenth car.
     \item \texttt{dreamer\_node/dreamer/dream.py}: This file serves as our entry point for training, orchestrating the interaction between the environment, the DreamerV3 agent, and the F1Tenth car's actuators.  The \texttt{dreamer} directory houses the DreamerV3 algorithm itself, allowing for focused development and modification of the core RL component.  This separation of concerns ensures a well-structured and easily maintainable codebase.
-    \item \texttt{dreamer\_node/env/}: This directory contains the various Gymnasium environment that includes the observation space, actions space, reward functions, and step functions.
-    \item \texttt{dreamer\_node/util/constants.py}: This file contains all the necessary constants and the configuration for the agent.
+    \item \texttt{dreamer\_node/environments/}: This directory contains the various Gymnasium environment that includes the observation space, actions space, reward functions, and step functions.
     
 \end{itemize}
 
@@ -73,7 +72,7 @@ By default, our Github workflow contains continuous integration that checks for 
     \end{verbatim}
     \item You can also fix and error in checks with:
     \begin{verbatim}
-    uv run rugg check --fix
+    uv run ruff check --fix
     \end{verbatim}
     \item To auto-format the code base, use:
     \begin{verbatim}
