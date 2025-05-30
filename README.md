@@ -96,7 +96,7 @@ Please reference [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution gu
 
 ## Lisence
 
-This project is lisenced under the [MIT](LISENCE) lisence. 
+This project is lisenced under the [MIT](https://github.com/uci-f1tenth/UCI_race_stack?tab=MIT-1-ov-file) lisence. 
 
 <!-- Link Definitions -->
 
