@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![Lisence][lisence-shield]][lisence-url]
+[![License][license-shield]][license-url]
 [![Contributors][contributors-shield]][issues-url]
 [![Forks][forks-shield]][forks-url]
 [![Stars][stars-shield]][stars-url]
@@ -42,7 +42,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#testiing">Testing</a></li>
     <li><a href="#checklist">Checklist</a></li>
-    <li><a href="#lisence">Lisence</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -94,14 +94,14 @@ Please reference [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution gu
 - [ ] Actor-Critic implementation
 - [ ] Scaling reward system
 
-## Lisence
+## License
 
-This project is lisenced under the [MIT](LICENSE) lisence. 
+This project is licensed under the [MIT](LICENSE) license. 
 
 <!-- Link Definitions -->
 
-[lisence-shield]: https://img.shields.io/github/license/uci-f1tenth/UCI_race_stack?style=plastic
-[lisence-url]: https://github.com/uci-f1tenth/UCI_race_stack?tab=MIT-1-ov-file
+[license-shield]: https://img.shields.io/github/license/uci-f1tenth/UCI_race_stack?style=plastic
+[license-url]: https://github.com/uci-f1tenth/UCI_race_stack?tab=MIT-1-ov-file
 [contributors-shield]: https://img.shields.io/github/contributors/uci-f1tenth/uci_f1tenth_workshop?style=plastic
 [contributors-url]: https://github.com/uci-f1tenth/uci_f1tenth_workshop/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/uci-f1tenth/uci_f1tenth_workshop?style=plastic
