@@ -19,11 +19,11 @@
 [![Stars][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<a href="https://github.com/uci-f1tenth/uci_f1tenth_workshop/blob/main/CONTRIBUTING.md">Get Started</a>
+<a href="https://github.com/uci-f1tenth/UCI_race_stack/blob/main/CONTRIBUTING.md">Get Started</a>
 &middot;
 <a href="https://github.com/uci-f1tenth/UCI_race_stack/blob/main/docs/Development_Guide.pdf">Documentation</a>
 &middot;
-<a href="https://github.com/uci-f1tenth/uci_f1tenth_workshop/issues/new?template=issue.md">Report Bug</a>
+<a href="https://github.com/uci-f1tenth/UCI_race_stack/issues/new?template=issue.md">Report Bug</a>
 
 </div>
 
@@ -102,11 +102,11 @@ This project is licensed under the [MIT](LICENSE) license.
 
 [license-shield]: https://img.shields.io/github/license/uci-f1tenth/UCI_race_stack?style=plastic
 [license-url]: https://github.com/uci-f1tenth/UCI_race_stack?tab=MIT-1-ov-file
-[contributors-shield]: https://img.shields.io/github/contributors/uci-f1tenth/uci_f1tenth_workshop?style=plastic
-[contributors-url]: https://github.com/uci-f1tenth/uci_f1tenth_workshop/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/uci-f1tenth/uci_f1tenth_workshop?style=plastic
-[forks-url]: https://github.com/uci-f1tenth/uci_f1tenth_workshop/forks
-[stars-shield]: https://img.shields.io/github/stars/uci-f1tenth/uci_f1tenth_workshop?style=plastic
-[stars-url]: https://github.com/uci-f1tenth/uci_f1tenth_workshop/stars
-[issues-shield]: https://img.shields.io/github/issues/uci-f1tenth/uci_f1tenth_workshop?style=plastic
-[issues-url]: https://github.com/uci-f1tenth/uci_f1tenth_workshop/issues
+[contributors-shield]: https://img.shields.io/github/contributors/uci-f1tenth/UCI_race_stack?style=plastic
+[contributors-url]: https://github.com/uci-f1tenth/UCI_race_stack/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/uci-f1tenth/UCI_race_stack?style=plastic
+[forks-url]: https://github.com/uci-f1tenth/UCI_race_stack/forks
+[stars-shield]: https://img.shields.io/github/stars/uci-f1tenth/UCI_race_stack?style=plastic
+[stars-url]: https://github.com/uci-f1tenth/UCI_race_stack/stars
+[issues-shield]: https://img.shields.io/github/issues/uci-f1tenth/UCI_race_stack?style=plastic
+[issues-url]: https://github.com/uci-f1tenth/UCI_race_stack/issues
