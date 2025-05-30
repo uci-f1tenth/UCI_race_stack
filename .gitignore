@@ -5,6 +5,7 @@
 .pydevproject
 .DS_Store
 .idea
+.npz
 
 logdir/f1tenth/*
 !logdir/f1tenth/eval_eps

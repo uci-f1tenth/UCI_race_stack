@@ -221,13 +221,19 @@ def simulate(
             transition["reward"] = r
             transition["discount"] = info.get("discount", np.array(1 - float(d)))
             add_to_cache(cache, index, transition)
+            print(
+                f"[DEBUG DEBUG] Cache {index}: Step {length[index]} | Keys: {list(transition.keys())} | Reward: {transition['reward']}"
+            )
 
         if done.any():
             indices = [index for index, d in enumerate(done) if d]
             # logging for done episode
             for i in indices:
                 save_episodes(directory, {i: cache[i]})
-                print("Saved the episode")
+                print(f"\n[DEBUG] Saving episode {i}")
+                for key in cache[i].keys():
+                    print(f"  {key}: {len(cache[i][key])}")
+                    print(f"[DEBUG] Total reward: {sum(cache[i]['reward'])}")
                 length = len(cache[i]["reward"]) - 1
                 score = float(np.array(cache[i]["reward"]).sum())
                 video = cache[i]["image"]
@@ -246,9 +252,10 @@ def simulate(
                     logger.scalar("train_length", length)
                     logger.scalar("train_episodes", len(cache))
                     try:
+                        # print(f"agent: {agent}")
                         current_step = agent.__self__._step
-                    except Exception:
-                        print("fallback")
+                    except Exception as e:
+                        print(f"fallback: {e}")
                         current_step = logger.step
                     logger.write(step=current_step)
 
@@ -271,9 +278,10 @@ def simulate(
                         logger.scalar("eval_length", length)
                         logger.scalar("eval_episodes", len(eval_scores))
                         try:
+                            # print(f"agent: {agent}")
                             current_step = agent.__self__._step
-                        except Exception:
-                            print("fallback")
+                        except Exception as e:
+                            print(f"fallback: {e}")
                             current_step = logger.step
                         logger.write(step=logger.step)
                         eval_done = True
@@ -345,7 +353,8 @@ def save_episodes(directory, episodes):
         valid_keys = [k for k in episode.keys() if "log_" not in k]
         lengths = [len(episode[k]) for k in valid_keys]
         length = min(lengths) if lengths else 0
-
+        for i, (key, episode) in enumerate(episodes.items()):
+            print(f"[DEBUG] Episode '{key}' reward length: {len(episode['reward'])}")
         if length < 1:
             print(f"Skipping empty episode {fname}")
             continue

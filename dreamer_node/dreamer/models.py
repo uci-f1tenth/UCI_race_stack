@@ -125,6 +125,9 @@ class WorldModel(nn.Module):
                 # Debug 2: Check encoder output
                 # print("\n=== Encoder Output ===")
                 # print(f"embed shape: {embed.shape}")
+                print(">>> Embed shape:", embed.shape)
+                print(">>> Action shape:", data["action"].shape)
+                print(">>> is_first shape:", data["is_first"].shape)
 
                 post, prior = self.dynamics.observe(
                     embed, data["action"], data["is_first"]
